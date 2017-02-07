@@ -1,15 +1,47 @@
 <?php
-/**
- * Create your routes in here. The name is the lowercase name of the controller
- * without the controller part, the stuff after the hash is the method.
- * e.g. page#index -> OCA\GluuSso\Controller\PageController->index()
- *
- * The controller class has to be registered in the application.php file since
- * it's instantiated in there
- */
-return [
-    'routes' => [
-	   ['name' => 'page#index', 'url' => '/', 'verb' => 'GET'],
-	   ['name' => 'page#do_echo', 'url' => '/echo', 'verb' => 'POST'],
-    ]
-];
+	/**
+	 * @copyright Copyright (c) 2017, Gluu, Inc.
+	 *
+	 * @author Vlad Karapetyan <vlad.karapetyan@mail.ru>
+	 *
+	 * This content is released under the MIT License (MIT)
+	 *
+	 * Copyright (c) 2017, Gluu inc, USA, Austin
+	 *
+	 * Permission is hereby granted, free of charge, to any person obtaining a copy
+	 * of this software and associated documentation files (the "Software"), to deal
+	 * in the Software without restriction, including without limitation the rights
+	 * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	 * copies of the Software, and to permit persons to whom the Software is
+	 * furnished to do so, subject to the following conditions:
+	 *
+	 * The above copyright notice and this permission notice shall be included in
+	 * all copies or substantial portions of the Software.
+	 *
+	 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	 * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	 * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	 * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+	 * THE SOFTWARE.
+	 */
+	
+	/** @var $this \OCP\Route\IRouter */
+	return [
+		'routes' => [
+			['name' => 'page#index', 'url' => '/', 'verb' => 'GET'],
+			['name' => 'page#editpage', 'url' => '/editpage', 'verb' => 'GET'],
+			['name' => 'page#editpage', 'url' => '/editpage/', 'verb' => 'GET'],
+			['name' => 'page#openidconfigpage', 'url' => '/openidconfig', 'verb' => 'GET'],
+			['name' => 'page#openidconfigpage', 'url' => '/openidconfig/', 'verb' => 'GET'],
+			['name' => 'page#loginpage', 'url' => '/loginpage', 'verb' => 'GET'],
+			['name' => 'page#loginfromopenid', 'url' => '/loginfromopenid', 'verb' => 'GET'],
+			['name' => 'page#logoutfromopenid', 'url' => '/logoutfromopenid', 'verb' => 'GET'],
+			['name' => 'page#tryLogin', 'url' => '/loginpage', 'verb' => 'POST'],
+			['name' => 'page#gluupostdata', 'url' => '/gluupostdata', 'verb' => 'POST'],
+			['name' => 'page#gluupostdataajax', 'url' => '/gluupostdataajax', 'verb' => 'POST'],
+			['name' => 'page#gluupostdataget', 'url' => '/gluupostdataget', 'verb' => 'GET']
+		]
+	];
+

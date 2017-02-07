@@ -5,9 +5,9 @@
     <name>Gluu Sso</name>
     <summary>OpenID Connect SSO by Gluu</summary>
     <description><![CDATA[Use OpenID Connect to login by leveraging the oxd client service demon.]]></description>
-    <licence>agpl</licence>
+    <licence>MIT</licence>
     <author mail="support@gluu.org" homepage="https://gluu.org">Gluu Inc.</author>
-    <version>0.0.1</version>
+    <version>2.4.4</version>
     <namespace>GluuSso</namespace>
     <category>auth</category>
     <category>organization</category>

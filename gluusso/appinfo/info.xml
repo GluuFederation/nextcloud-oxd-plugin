@@ -2,7 +2,7 @@
 <info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
     <id>gluusso</id>
-    <name>Gluu Sso</name>
+    <name>OpenID Connect SSO by Gluu</name>
     <summary>OpenID Connect SSO by Gluu</summary>
     <description><![CDATA[Use OpenID Connect to login by leveraging the oxd client service demon.]]></description>
     <licence>MIT</licence>

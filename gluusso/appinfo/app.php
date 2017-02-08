@@ -78,8 +78,8 @@
 	}
 	if($redirectLogout === true) {
 		if (isset($_SESSION['session_in_op'])) {
-			$csrfToken = \OC::$server->getCsrfTokenManager()->getToken();
-			header('Location: '.$urlGenerator->linkToRouteAbsolute('gluusso.page.logoutfromopenid') .'?requesttoken='. urlencode($csrfToken->getEncryptedValue()));
+			//$csrfToken = \OC::$server->getCsrfTokenManager()->getToken();
+			header('Location: '.$urlGenerator->linkToRouteAbsolute('gluusso.page.logoutfromopenid'));
 			exit();
 		}
 		

@@ -14,7 +14,7 @@
     <category>social</category>
     <category>tools</category>
     <dependencies>
-        <owncloud min-version="9.2"/>
+        <owncloud min-version="9"/>
         <nextcloud min-version="11" max-version="11"/>
     </dependencies>
 </info>

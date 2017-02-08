@@ -13,13 +13,11 @@
 			<field>
 				<name>gluu_action</name>
 				<type>text</type>
-				<default></default>
-				<length>1000</length>
+				<length>255</length>
 			</field>
             <field>
                 <name>gluu_value</name>
-                <type>text</type>
-                <default></default>
+                <type>clob</type>
                 <length>1000</length>
             </field>
             <index>
@@ -27,7 +25,6 @@
                 <unique>true</unique>
                 <field>
                     <name>gluu_action</name>
-                    <sorting>ascending</sorting>
                 </field>
             </index>
 		</declaration>

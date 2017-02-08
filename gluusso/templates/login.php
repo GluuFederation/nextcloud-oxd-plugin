@@ -32,8 +32,7 @@
             'lostpassword',
             'login'
     ]);
-    
-    
+	
     $login_url                   = $_['login_url'];
 	$gluu_oxd_id                   = $_['gluu_oxd_id'];
 	$gluu_is_port_working                   = $_['gluu_is_port_working'];

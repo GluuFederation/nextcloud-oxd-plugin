@@ -1352,9 +1352,10 @@
 		}
 		
 		/**
-		 * @NoAdminRequired
-		 * @NoCSRFRequired
-		 * @return TemplateResponse
+		 * @PublicPage
+		 * @UseSession
+		 * @OnlyUnauthenticatedUsers
+		 * @return Http\RedirectResponse
 		 */
 		public function gluupostdataget()
 		{
@@ -1382,6 +1383,12 @@
 			
 			$gluu_other_config = json_decode($this->mapper->select_query('gluu_other_config'), true);
 			$gluu_oxd_id = $gluu_other_config['gluu_oxd_id'];
+			$gluu_send_user_check = $gluu_other_config['gluu_send_user_check'];
+			
+			if($gluu_send_user_check){
+				header("Location: " . $this->login_url());
+				exit;
+			}
 			
 			$parameters = array();
 			$parameters['login_url'] = $this->login_url();
@@ -1798,8 +1805,7 @@
 			if (!empty($get_user_info_array->user_name[0])) {
 				$username = $get_user_info_array->user_name[0];
 			} else {
-				$email_split = explode("@", $reg_email);
-				$username = $email_split[0];
+				$username = $reg_email;
 			}
 			if (!empty($get_user_info_array->permission[0])) {
 				$world = str_replace("[", "", $get_user_info_array->permission[0]);
@@ -1901,8 +1907,10 @@
 		}
 		
 		/**
-		 * @NoAdminRequired
+		 * @PublicPage
 		 * @UseSession
+		 * @NoCSRFRequired
+		 * @param string $user
 		 *
 		 * @return RedirectResponse
 		 */
@@ -1943,8 +1951,11 @@
 									$this->config->deleteUserValue($this->userSession->getUser()->getUID(), 'login_token', $loginToken);
 								}
 								$this->userSession->logout();
-								header("Location: " . $logout->getResponseObject()->data->uri);
-								exit;
+								if(!is_null($logout->getResponseObject()->data->uri)){
+									header("Location: " . $logout->getResponseObject()->data->uri);
+									exit;
+								}
+								
 							}
 						}
 					} else {
@@ -1966,6 +1977,14 @@
 				$this->config->deleteUserValue($this->userSession->getUser()->getUID(), 'login_token', $loginToken);
 			}
 			$this->userSession->logout();
+			$gluu_other_config = json_decode($this->mapper->select_query('gluu_other_config'), true);
+			$gluu_custom_logout = $gluu_other_config['gluu_custom_logout'];
+			if(!is_null($gluu_custom_logout) and !empty($gluu_custom_logout)){
+				header("Location: $gluu_custom_logout");
+				exit;
+			}else{
+				return new RedirectResponse($this->urlGenerator->linkToRouteAbsolute('core.login.showLoginForm'));
+			}
 			
 			return new RedirectResponse($this->urlGenerator->linkToRouteAbsolute('core.login.showLoginForm'));
 		}

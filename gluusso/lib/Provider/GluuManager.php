@@ -63,7 +63,7 @@
 		}
 		
 		public function delete_query(){
-			return $this->mapper->deleteQuery();
+			$this->mapper->deleteQuery();
 		}
 		
 		public function updateUser($user, $data){

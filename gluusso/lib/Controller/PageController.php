@@ -1814,7 +1814,25 @@
 				$world = str_replace("[", "", $get_user_info_array->permission[0]);
 				$reg_user_permission = str_replace("]", "", $world);
 			}
+			$bool = false;
+			$gluu_other_config = json_decode($this->mapper->select_query('gluu_other_config'), true);
+			$gluu_new_roles = $gluu_other_config['gluu_user_role'];
+			$gluu_users_can_register = $gluu_other_config['gluu_users_can_register'];
 			
+			
+			if($gluu_users_can_register == 2 and !empty($gluu_new_roles)){
+				foreach ($gluu_new_roles as $gluu_new_role) {
+					if (strstr($reg_user_permission, $gluu_new_role)) {
+						$bool = true;
+					}
+				}
+				if(!$bool){
+					$_SESSION['error_script'] = "<a class='warning'>You are not authorized for an account on this application. If you think this is an error, please contact your OpenID Connect Provider (OP) admin.</a><br/>
+					<a style='border-radius: 3px !important; padding: 10px 10px !important;font-weight: bold !important;font-size: 15px !important; margin: 5px !important; width: 269px !important;' class='login primary' href='" . $this->gluu_sso_doing_logout($get_tokens_by_code->getResponseIdToken(), $_REQUEST['session_state'], $_REQUEST['state']) . "'>Logout from OpenID Provider</a>";
+					return new RedirectResponse(\OC::$server->getURLGenerator()->getAbsoluteURL('/'));
+					exit;
+				}
+			}
 			if($this->userManager->userExists($username)){
 				$loginResult = $this->userManager->get($username);
 				
@@ -1836,21 +1854,7 @@
 				$this->updateUserSettings($loginResult->getUID(),$reg_avatar, $reg_display_name, $reg_display_name,$reg_home_phone_number,$reg_home_phone_number,$reg_email,$reg_email,$reg_website,$reg_website,$reg_street_address,$reg_street_address,'','');
 				
 			}else{
-				
-				$bool = true;
-				$gluu_other_config = json_decode($this->mapper->select_query('gluu_other_config'), true);
-				$gluu_new_roles = $gluu_other_config['gluu_user_role'];
-				$gluu_users_can_register = $gluu_other_config['gluu_users_can_register'];
-				
-				
-				if($gluu_users_can_register == 2 and !empty($gluu_new_roles)){
-					if (!in_array($reg_user_permission, $gluu_new_roles)) {
-						$bool = false;
-					}else{
-						$bool = True;
-					}
-				}
-				if(!$bool or $gluu_users_can_register == 3){
+				if($gluu_users_can_register == 3){
 					$_SESSION['error_script'] = "<a class='warning'>You are not authorized for an account on this application. If you think this is an error, please contact your OpenID Connect Provider (OP) admin.</a><br/>
 					<a style='border-radius: 3px !important; padding: 10px 10px !important;font-weight: bold !important;font-size: 15px !important; margin: 5px !important; width: 269px !important;' class='login primary' href='" . $this->gluu_sso_doing_logout($get_tokens_by_code->getResponseIdToken(), $_REQUEST['session_state'], $_REQUEST['state']) . "'>Logout from OpenID Provider</a>";
 					return new RedirectResponse(\OC::$server->getURLGenerator()->getAbsoluteURL('/'));

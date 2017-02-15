@@ -42,7 +42,7 @@ In your NextCloud admin menu panel you should now see the OpenID Connect menu ta
 ![General](https://raw.githubusercontent.com/GluuFederation/nextcloud-oxd-plugin/master/docu/3.png) 
 
 1. Automatically register any user with an account in the OpenID Provider: By setting registration to automatic, any user with an account in the OP will be able to register for an account in your NextCloud site. They will be assigned the new user default role specified below.
-2. Only register users with the following role(s) in the OP: Using this option you can limit registration to users who have a specified role in the OP, for instance `nextcloud`. This is not configurable in all OP's. It is configurable if you are using a Gluu Server. [Follow the instructions below](#role-based-enrollment) to limit access based on an OP role. 
+2. Only register and allow ongoing access to users with one or more of the following roles in the OP: Using this option you can limit registration to users who have a specified role in the OP, for instance `nextcloud`. This is not configurable in all OP's. It is configurable if you are using a Gluu Server. [Follow the instructions below](#role-based-enrollment) to limit access based on an OP role. 
 3. New User Default Group: specify which Group to give to new users upon registration.  
 4. URI of the OpenID Provider: insert the URI of the OpenID Connect Provider.
 5. Custom URI after logout: custom URI after logout (for example "Thank you" page).
@@ -59,7 +59,7 @@ To generate your `client_id` and `client_secret` use the redirect uri: `https://
 
 > If you are using a Gluu server as your OpenID Provider, you can make sure everything is configured properly by logging into to your Gluu Server, navigate to the OpenID Connect > Clients page. Search for your `oxd id`.
 
-#### Role based enrollment
+#### Enrollment and Access Management
 
 1. Navigate to your Gluu Server admin GUI. 
 2. Click the `Users` tab in the left hand navigation menu. 

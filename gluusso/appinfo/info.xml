@@ -7,6 +7,18 @@
     <description><![CDATA[Use OpenID Connect to login by leveraging the oxd client service demon.]]></description>
     <licence>MIT</licence>
     <author mail="support@gluu.org" homepage="https://gluu.org">Gluu Inc.</author>
+    <author mail="support@gluu.org" homepage="https://support.gluu.org">Support</author>
+    <author mail="mike@gluu.org" homepage="https://github.com/orgs/GluuFederation/people/nynymike">Director: Mike Schwartz</author>
+    <author mail="mr.karapetyan88@gmail.com" homepage="https://github.com/karapetyan88">Developer: Volodya Karapetyan</author>
+    <documentation>
+        <user>https://github.com/GluuFederation</user>
+        <admin>https://github.com/orgs/GluuFederation/people/nynymike</admin>
+        <developer>https://github.com/karapetyan88</developer>
+    </documentation>
+    <website>https://oxd.gluu.org</website>
+    <bugs>https://github.com/GluuFederation/nextcloud-oxd-plugin/issues</bugs>
+    <repository>https://github.com/GluuFederation/nextcloud-oxd-plugin/issues</repository>
+    <screenshot small-thumbnail="https://github.com/GluuFederation/nextcloud-oxd-plugin/blob/master/nextcloud.png">OpenID Connect app by Gluu</screenshot>
     <version>2.4.4</version>
     <namespace>GluuSso</namespace>
     <category>auth</category>

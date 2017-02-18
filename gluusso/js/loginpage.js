@@ -1,5 +1,5 @@
 /**
- * Created by Vlad on 1/26/2017.
+ * Created by Volodya on 1/26/2017.
  */
 
 jQuery(document).ready(function() {

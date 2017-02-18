@@ -1,9 +1,26 @@
 <?php
 	
 	/**
-	 * @copyright Copyright (c) 2017, Gluu, Inc.
+	 * Gluu-oxd-library
 	 *
-	 * @author Vlad Karapetyan <vlad.karapetyan@mail.ru>
+	 * An open source application library for PHP
+	 *
+	 *
+	 * @copyright Copyright (c) 2017, Gluu Inc. (https://gluu.org/)
+	 * @license	  MIT   License            : <http://opensource.org/licenses/MIT>
+	 *
+	 * @package	  OpenID Connect APP by Gluu
+	 * @category  Application for NextCloud
+	 * @version   2.4.4
+	 *
+	 * @author    Gluu Inc.          : <https://gluu.org>
+	 * @link      Oxd site           : <https://oxd.gluu.org>
+	 * @link      Documentation      : <https://oxd.gluu.org/docs/2.4.4/plugin/nextcloud/>
+	 * @director  Mike Schwartz      : <mike@gluu.org>
+	 * @support   Support page       : <support@gluu.org>
+	 * @developer Volodya Karapetyan : <mr.karapetyan88@gmail.com>
+	 *
+	 
 	 *
 	 * This content is released under the MIT License (MIT)
 	 *
@@ -26,6 +43,7 @@
 	 * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 	 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 	 * THE SOFTWARE.
+	 *
 	 */
 	
 	namespace OCA\GluuSso\oxdrplib;

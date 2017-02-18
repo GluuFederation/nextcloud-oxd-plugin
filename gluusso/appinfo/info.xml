@@ -18,7 +18,7 @@
     <website>https://oxd.gluu.org</website>
     <bugs>https://github.com/GluuFederation/nextcloud-oxd-plugin/issues</bugs>
     <repository>https://github.com/GluuFederation/nextcloud-oxd-plugin/issues</repository>
-    <screenshot small-thumbnail="https://github.com/GluuFederation/nextcloud-oxd-plugin/blob/master/nextcloud.png">OpenID Connect app by Gluu</screenshot>
+    <screenshot small-thumbnail="https://github.com/GluuFederation/nextcloud-oxd-plugin/blob/master/nextcloud.png">OpenID Connect SSO app by Gluu</screenshot>
     <version>2.4.4</version>
     <namespace>GluuSso</namespace>
     <category>auth</category>

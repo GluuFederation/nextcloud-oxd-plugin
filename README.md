@@ -1,12 +1,12 @@
-# OpenID Connect Single Sign-On (SSO) NextCloud Plugin By Gluu
+# OpenID Connect Single Sign-On (SSO) NextCloud APP by Gluu
 
 ![image](https://raw.githubusercontent.com/GluuFederation/nextcloud-oxd-plugin/master/nextcloud.png)
 
-Gluu's OpenID Connect Single Sign-On (SSO) NextCloud Plugin will enable you to authenticate users against any standard OpenID Connect Provider (OP). If you don't already have an OP you can use Google or [deploy the free open source Gluu Server](https://gluu.org/docs/deployment).  
+Gluu's OpenID Connect Single Sign-On (SSO) NextCloud APP will enable you to authenticate users against any standard OpenID Connect Provider (OP). If you don't already have an OP you can use Google or [deploy the free open source Gluu Server](https://gluu.org/docs/deployment).  
 
 ## Requirements
 1. NextCloud min version 11.0.0
-2. In order to use the NextCloud plugin you will need a standard OP (like Google or a Gluu Server) and the oxd server.
+2. In order to use the NextCloud APP you will need a standard OP (like Google or a Gluu Server) and the oxd server.
 
 * [Gluu Server Installation Guide](https://www.gluu.org/docs/deployment/).
 
@@ -16,7 +16,7 @@ Gluu's OpenID Connect Single Sign-On (SSO) NextCloud Plugin will enable you to a
 ## Installation
  
 ### Download
-[Github source](https://github.com/GluuFederation/nextcloud-oxd-plugin/master/gluusso.zip).
+[Github source](https://github.com/GluuFederation/nextcloud-oxd-plugin/master/gluusso.tar.gz).
 
 [Link to NextCloud marketplace](https://apps.nextcloud.com/apps/openid_connect_sso)
 
@@ -25,10 +25,10 @@ If you have already package, unzip it to your NextCloud site root/apps folder.
 
 ### Activate 
 
-Activate the plugin by performing the following steps:
+Activate the app by performing the following steps:
  
 1. Go to `https://{site-base-url}/index.php/settings/apps`
-2. In tab `Not enabled` find OpenID Connect SSO Plugin By Gluu and click the `Enable` button.
+2. In tab `Not enabled` find OpenID Connect SSO APP By Gluu and click the `Enable` button.
 ![upload](https://raw.githubusercontent.com/GluuFederation/suitecrm-oxd-module/master/docu/1.png) 
 3. Open menu tab OpenID Connect SSO
 ![upload](https://raw.githubusercontent.com/GluuFederation/suitecrm-oxd-module/master/docu/2.png) 
@@ -55,7 +55,7 @@ If your OpenID Connect Provider doesn't support dynamic registration, you will n
 
 ![General](https://raw.githubusercontent.com/GluuFederation/nextcloud-oxd-plugin/master/docu/4.png) 
 
-To generate your `client_id` and `client_secret` use the redirect uri: `https://{site-base-url}/index.php?option=oxdOpenId`.
+To generate your `client_id` and `client_secret` use the redirect uri: `https://{site-base-url}/index.php/apps/gluusso/loginfromopenid`.
 
 > If you are using a Gluu server as your OpenID Provider, you can make sure everything is configured properly by logging into to your Gluu Server, navigate to the OpenID Connect > Clients page. Search for your `oxd id`.
 
@@ -66,9 +66,9 @@ To generate your `client_id` and `client_secret` use the redirect uri: `https://
 3. Select `Manage People`. 
 4. Find the person(s) who should have access. 
 5. Click their user entry. 
-6. Add the `User Permission` attribute to the person and specify the same value as in the plugin. For instance, if in the plugin you have limit enrollment to user(s) with role = `nextcloud`, then you should also have `User Permission` = `nextcloud` in the user entry. [See a screenshot example](https://cloud.githubusercontent.com/assets/5271048/19735932/2c3817c4-9b73-11e6-9d59-ace7ecdfed41.png).
+6. Add the `User Permission` attribute to the person and specify the same value as in the app. For instance, if in the app you have limit enrollment to user(s) with role = `nextcloud`, then you should also have `User Permission` = `nextcloud` in the user entry. [See a screenshot example](https://cloud.githubusercontent.com/assets/5271048/19735932/2c3817c4-9b73-11e6-9d59-ace7ecdfed41.png).
 7. Update the user record. 
-8. Go back to the NextCloud plugin and make sure the `permission` scope is requested (see below). 
+8. Go back to the NextCloud APP and make sure the `permission` scope is requested (see below). 
 9. Now they are ready for enrollment at your NextCloud site. 
 
 ### OpenID Connect Configuration
@@ -83,7 +83,7 @@ To view your OP's available scopes, open a web browser and navigate to `https://
 
 If you are using a Gluu server as your OpenID Provider, you can view all available scopes by navigating to the OpenID Connect > Scopes interface inside the Gluu Server. 
 
-In the Plugin interface you can enable, disable and delete scopes. 
+In the APP interface you can enable, disable and delete scopes. 
 
 #### Authentication
 
@@ -95,5 +95,5 @@ Select ACR: To signal which type of authentication should be used, an OpenID Con
 
 Navigate to your OpenID Provider configuration webpage `https://OpenID-Provider/.well-known/openid-configuration` to see supported `acr_values`. 
 
-In the `Select acr` section of the plugin page, choose the mechanism which you want for authentication. If the `Select acr` value in the plugin is `none`, users will be sent to pass the OP's default authentication mechanism.
+In the `Select acr` section of the app page, choose the mechanism which you want for authentication. If the `Select acr` value in the app is `none`, users will be sent to pass the OP's default authentication mechanism.
 

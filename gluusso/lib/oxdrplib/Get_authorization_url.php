@@ -8,7 +8,7 @@
 	 * @copyright Copyright (c) 2017, Gluu Inc. (https://gluu.org/)
 	 * @license	  MIT   License            : <http://opensource.org/licenses/MIT>
 	 *
-	 * @package	  OpenID Connect APP by Gluu
+	 * @package	  OpenID Connect SSO APP by Gluu
 	 * @category  Application for NextCloud
 	 * @version   2.4.4
 	 *

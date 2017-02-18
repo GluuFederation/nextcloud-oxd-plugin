@@ -16,7 +16,7 @@ Gluu's OpenID Connect Single Sign-On (SSO) NextCloud APP will enable you to auth
 ## Installation
  
 ### Download
-[Github source](https://github.com/GluuFederation/nextcloud-oxd-plugin/master/gluusso.tar.gz).
+[Github source](https://github.com/GluuFederation/nextcloud-oxd-plugin/blob/master/gluusso.tar.gz?raw=true).
 
 [Link to NextCloud marketplace](https://apps.nextcloud.com/apps/openid_connect_sso)
 

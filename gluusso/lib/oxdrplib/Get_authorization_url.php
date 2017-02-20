@@ -10,7 +10,7 @@
 	 *
 	 * @package	  OpenID Connect SSO APP by Gluu
 	 * @category  Application for NextCloud
-	 * @version   2.4.4
+	 * @version   3.0.0
 	 *
 	 * @author    Gluu Inc.          : <https://gluu.org>
 	 * @link      Oxd site           : <https://oxd.gluu.org>

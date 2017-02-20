@@ -6,7 +6,7 @@
 	 *
 	 * @package	  OpenID Connect SSO APP by Gluu
 	 * @category  Application for NextCloud
-	 * @version   2.4.4
+	 * @version   3.0.0
 	 *
 	 * @author    Gluu Inc.          : <https://gluu.org>
 	 * @link      Oxd site           : <https://oxd.gluu.org>
@@ -51,10 +51,11 @@
 			['name' => 'page#loginpage', 'url' => '/loginpage', 'verb' => 'GET'],
 			['name' => 'page#loginfromopenid', 'url' => '/loginfromopenid', 'verb' => 'GET'],
 			['name' => 'page#logoutfromopenid', 'url' => '/logoutfromopenid', 'verb' => 'GET'],
+			['name' => 'page#gluupostdataget', 'url' => '/gluupostdataget', 'verb' => 'GET'],
 			['name' => 'page#tryLogin', 'url' => '/loginpage', 'verb' => 'POST'],
 			['name' => 'page#gluupostdata', 'url' => '/gluupostdata', 'verb' => 'POST'],
-			['name' => 'page#gluupostdataajax', 'url' => '/gluupostdataajax', 'verb' => 'POST'],
-			['name' => 'page#gluupostdataget', 'url' => '/gluupostdataget', 'verb' => 'GET']
+			['name' => 'page#gluupostdataajax', 'url' => '/gluupostdataajax', 'verb' => 'POST']
+			
 		]
 	];
 

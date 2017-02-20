@@ -22,11 +22,7 @@
 ?>
 <script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" type="application/javascript">
 
-
     jQuery(document ).ready(function() {
-        $edit_cancel_function = $('#delete_it');
-        var formSubmitting = false;
-        $edit_cancel_function.on('click', function() { return confirm("Are you sure that you want to remove this OpenID Connect provider? Users will no longer be able to authenticate against this OP."); });
         jQuery('[data-toggle="tooltip"]').tooltip();
         jQuery('#p_role').on('click', 'a.remrole', function() {
             jQuery(this).parents('.role_p').remove();

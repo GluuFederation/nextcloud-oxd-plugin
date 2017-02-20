@@ -5,7 +5,7 @@
 	 *
 	 * @package	  OpenID Connect SSO APP by Gluu
 	 * @category  Application for NextCloud
-	 * @version   3.0.0
+	 * @version   2.4.4
 	 *
 	 * @author    Gluu Inc.          : <https://gluu.org>
 	 * @link      Oxd site           : <https://oxd.gluu.org>
@@ -231,7 +231,7 @@
                                                     <div><input class="button button-primary button-large" type="submit" name="register" value="Register" style=";width: 120px; float: right;"/></div>
                                                 </td>
                                                 <td>
-                                                    <div><a class="button button-danger button-large" id="delete_it" style="background-color:red;text-decoration: none;text-align:center; float: left; width: 120px;" href="gluupostdataget">Delete</a></div>
+                                                    <div><a class="button button-danger button-large" onclick="return confirm('Are you sure that you want to remove this OpenID Connect provider? Users will no longer be able to authenticate against this OP.')" style="background-color:red;text-decoration: none;text-align:center; float: left; width: 120px;" href="gluupostdataget&submit=delete">Delete</a></div>
                                                 </td>
                                             </tr>
                                         <?php }
@@ -242,7 +242,7 @@
                                                         <div><input type="submit" name="register" value="Register" style="width: 120px; float: right;" class="button button-primary button-large"/></div>
                                                     </td>
                                                     <td>
-                                                        <a class="button button-primary button-large" id="delete_it" style="background-color:red;text-decoration: none;text-align:center; float: left; width: 120px;" href="gluupostdataget">Delete</a>
+                                                        <a class="button button-primary button-large" onclick="return confirm('Are you sure that you want to remove this OpenID Connect provider? Users will no longer be able to authenticate against this OP.')" style="background-color:red;text-decoration: none;text-align:center; float: left; width: 120px;" href="gluupostdataget&submit=delete">Delete</a>
                                                     </td>
                                                 <?php }else{?>
                                                     <td style="width: 250px">

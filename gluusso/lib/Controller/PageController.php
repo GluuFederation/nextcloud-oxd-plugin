@@ -6,7 +6,7 @@
 	 *
 	 * @package	  OpenID Connect SSO APP by Gluu
 	 * @category  Application for NextCloud
-	 * @version   3.0.0
+	 * @version   2.4.4
 	 *
 	 * @author    Gluu Inc.          : <https://gluu.org>
 	 * @link      Oxd site           : <https://oxd.gluu.org>
@@ -1366,27 +1366,21 @@
 		/**
 		 * @PublicPage
 		 * @UseSession
-		 * @NoCSRFRequired
-		 * @param string $user
-		 *
-		 * @return RedirectResponse
+		 * @OnlyUnauthenticatedUsers
+		 * @return Http\RedirectResponse
 		 */
 		public function gluupostdataget()
 		{
 			@session_start();
 			$base_url = $this->getBaseUrl();
-			$user = \OC::$server->getUserSession()->getUser();
-			if ($user and \OC::$server->getGroupManager()->isAdmin($user->getUID())) {
-					$this->mapper->delete_query();
-					unset($_SESSION['openid_error']);
-					$_SESSION['message_success'] = 'Configurations deleted Successfully.';
-					
-					return new RedirectResponse($this->urlGenerator->linkToRoute('gluusso.page.index'));
-					exit;
+			if (isset($_REQUEST['submit']) and strpos($_REQUEST['submit'], 'delete') !== false and !empty($_REQUEST['submit'])) {
+				$this->mapper->delete_query();
+				unset($_SESSION['openid_error']);
+				$_SESSION['message_success'] = 'Configurations deleted Successfully.';
+				
+				return new RedirectResponse($this->urlGenerator->linkToRoute('gluusso.page.index'));
+				exit;
 			}
-			return new RedirectResponse($this->urlGenerator->linkToRoute('gluusso.page.index'));
-			exit;
-			
 		}
 		
 		/**

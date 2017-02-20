@@ -5,7 +5,7 @@
     <name>OpenID Connect SSO by Gluu</name>
     <summary>OpenID Connect SSO by Gluu</summary>
     <description><![CDATA[Use OpenID Connect to login by leveraging the oxd client service demon.]]></description>
-    <licence>MIT</licence>
+    <licence>agpl</licence>
     <author mail="support@gluu.org" homepage="https://gluu.org">Gluu Inc.</author>
     <author mail="support@gluu.org" homepage="https://support.gluu.org">Support</author>
     <author mail="mike@gluu.org" homepage="https://github.com/orgs/GluuFederation/people/nynymike">Director: Mike Schwartz</author>

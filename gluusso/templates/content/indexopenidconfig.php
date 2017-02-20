@@ -10,10 +10,10 @@
      *
      * @author    Gluu Inc.          : <https://gluu.org>
      * @link      Oxd site           : <https://oxd.gluu.org>
-     * @link      Documentation      : <https://oxd.gluu.org/docs/2.4.4/plugin/nextcloud/>
+     * @link      Documentation      : <https://oxd.gluu.org/docs/plugin/nextcloud/>
      * @director  Mike Schwartz      : <mike@gluu.org>
-     * @support   Support page       : <support@gluu.org>
-     * @developer Volodya Karapetyan : <mr.karapetyan88@gmail.com>
+     * @support   Support email      : <support@gluu.org>
+     * @developer Volodya Karapetyan : <https://github.com/karapetyan88> <mr.karapetyan88@gmail.com>
      *
      *
      * This content is released under the MIT License (MIT)

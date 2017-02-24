@@ -3,7 +3,7 @@
       xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
     <id>gluusso</id>
     <name>OpenID Connect SSO by Gluu</name>
-    <summary>OpenID Connect SSO by Gluu</summary>
+    <summary>Gluu's OpenID Connect Single Sign-On (SSO) WordPress Plugin will enable you to authenticate users against any standard OpenID Connect Provider (OP). If you don't already have an OP you can use Google or deploy the free open source Gluu Server.</summary>
     <description><![CDATA[Use OpenID Connect to login by leveraging the oxd client service demon.]]></description>
     <licence>agpl</licence>
     <author mail="support@gluu.org" homepage="https://gluu.org">Gluu Inc.</author>

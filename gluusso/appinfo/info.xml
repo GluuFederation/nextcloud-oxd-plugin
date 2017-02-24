@@ -4,7 +4,7 @@
     <id>gluusso</id>
     <name>OpenID Connect SSO by Gluu</name>
     <summary>Gluu's OpenID Connect Single Sign-On (SSO) MatterMost Plugin will enable you to authenticate users against any standard OpenID Connect Provider (OP). If you don't already have an OP you can use Google or deploy the free open source Gluu Server.</summary>
-    <description><![CDATA[Use OpenID Connect to login by leveraging the oxd client service demon.]]></description>
+    <description><![CDATA[Use the oxd plugin for MatterMost to send users to any standard OpenID Connect Provider (OP) for login and enrollment. ]]></description>
     <licence>agpl</licence>
     <author mail="support@gluu.org" homepage="https://gluu.org">Gluu Inc.</author>
     <author mail="support@gluu.org" homepage="https://support.gluu.org">Support</author>

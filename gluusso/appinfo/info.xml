@@ -11,9 +11,9 @@
     <author mail="mike@gluu.org" homepage="https://github.com/orgs/GluuFederation/people/nynymike">Director: Mike Schwartz</author>
     <author mail="mr.karapetyan88@gmail.com" homepage="https://github.com/karapetyan88">Developer: Volodya Karapetyan</author>
     <documentation>
-        <user>https://github.com/GluuFederation</user>
-        <admin>https://github.com/orgs/GluuFederation/people/nynymike</admin>
-        <developer>https://github.com/karapetyan88</developer>
+        <user>https://github.com/GluuFederation/nextcloud-oxd-plugin</user>
+        <admin>https://github.com/GluuFederation/nextcloud-oxd-plugin</admin>
+        <developer>https://github.com/GluuFederation/nextcloud-oxd-plugin</developer>
     </documentation>
     <website>https://oxd.gluu.org</website>
     <repository type="git">https://github.com/GluuFederation/nextcloud-oxd-plugin.git</repository>

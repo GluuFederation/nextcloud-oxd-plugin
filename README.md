@@ -1,3 +1,5 @@
+[TOC]
+
 # OpenID Connect Single Sign-On (SSO) NextCloud APP by Gluu
 
 ![image](https://raw.githubusercontent.com/GluuFederation/nextcloud-oxd-plugin/master/nextcloud.png)
@@ -5,8 +7,10 @@
 Gluu's OpenID Connect Single Sign-On (SSO) NextCloud APP will enable you to authenticate users against any standard OpenID Connect Provider (OP). If you don't already have an OP you can use Google or [deploy the free open source Gluu Server](https://gluu.org/docs/deployment).  
 
 ## Requirements
-1. NextCloud min version 11.0.0
-2. In order to use the NextCloud APP you will need a standard OP (like Google or a Gluu Server) and the oxd server.
+
+In order to use the NextCloud APP you will need a standard OP (like Google or a Gluu Server) and the oxd server.
+
+* Compatibility : 11.x version
 
 * [Gluu Server Installation Guide](https://www.gluu.org/docs/deployment/).
 
@@ -18,7 +22,7 @@ Gluu's OpenID Connect Single Sign-On (SSO) NextCloud APP will enable you to auth
 ### Download
 [Github source](https://github.com/GluuFederation/nextcloud-oxd-plugin/blob/master/gluusso.tar.gz?raw=true).
 
-[Link to NextCloud marketplace](https://apps.nextcloud.com/apps/openid_connect_sso)
+[Link to NextCloud marketplace](https://apps.nextcloud.com/apps/gluusso)
 
 ### Unzip 
 If you have already package, unzip it to your NextCloud site root/apps folder.

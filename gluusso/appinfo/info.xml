@@ -3,12 +3,12 @@
       xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
     <id>gluusso</id>
     <name>OpenID Connect SSO by Gluu</name>
-    <summary>Gluu's OpenID Connect Single Sign-On (SSO) NextCloud APP will enable you to authenticate users against any standard OpenID Connect Provider (OP). If you don't already have an OP you can use Google or deploy the free open source Gluu Server.</summary>
-    <description><![CDATA[Use the oxd plugin for NextCloud to send users to any standard OpenID Connect Provider (OP) for login and enrollment. ]]></description>
+    <summary>Use OpenID Connect to login by leveraging the oxd client service demon.</summary>
+    <description><![CDATA[Gluu's OpenID Connect Single Sign-On (SSO) NextCloud app will enable you to authenticate users against any standard OpenID Provider (OP). If you don't already have an OP you can [deploy the free open source Gluu Server](https://gluu.org/docs/deployment). ]]></description>
     <licence>agpl</licence>
     <author mail="support@gluu.org" homepage="https://gluu.org">Gluu Inc.</author>
     <author mail="support@gluu.org" homepage="https://support.gluu.org">Support</author>
-    <author mail="mike@gluu.org" homepage="https://github.com/orgs/GluuFederation/people/nynymike">Director: Mike Schwartz</author>
+    <author mail="mike@gluu.org" homepage="https://github.com/nynymike">Director: Mike Schwartz</author>
     <author mail="mr.karapetyan88@gmail.com" homepage="https://github.com/karapetyan88">Developer: Volodya Karapetyan</author>
     <documentation>
         <user>https://gluu.org/docs/oxd/plugin/nextcloud/</user>

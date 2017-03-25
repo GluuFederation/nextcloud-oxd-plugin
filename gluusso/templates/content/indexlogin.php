@@ -6,11 +6,11 @@
 	 *
 	 * @package	  OpenID Connect SSO APP by Gluu
 	 * @category  Application for NextCloud
-	 * @version   3.0.0
+	 * @version   3.0.1
 	 *
 	 * @author    Gluu Inc.          : <https://gluu.org>
 	 * @link      Oxd site           : <https://oxd.gluu.org>
-	 * @link      Documentation      : <https://oxd.gluu.org/docs/plugin/nextcloud/>
+	 * @link      Documentation      : <https://gluu.org/docs/oxd/plugin/nextcloud/>
 	 * @director  Mike Schwartz      : <mike@gluu.org>
 	 * @support   Support email      : <support@gluu.org>
 	 * @developer Volodya Karapetyan : <https://github.com/karapetyan88> <mr.karapetyan88@gmail.com>

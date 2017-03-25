@@ -3,17 +3,17 @@
       xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
     <id>gluusso</id>
     <name>OpenID Connect SSO by Gluu</name>
-    <summary>Gluu's OpenID Connect Single Sign-On (SSO) MatterMost Plugin will enable you to authenticate users against any standard OpenID Connect Provider (OP). If you don't already have an OP you can use Google or deploy the free open source Gluu Server.</summary>
-    <description><![CDATA[Use the oxd plugin for MatterMost to send users to any standard OpenID Connect Provider (OP) for login and enrollment. ]]></description>
+    <summary>Gluu's OpenID Connect Single Sign-On (SSO) NextCloud APP will enable you to authenticate users against any standard OpenID Connect Provider (OP). If you don't already have an OP you can use Google or deploy the free open source Gluu Server.</summary>
+    <description><![CDATA[Use the oxd plugin for NextCloud to send users to any standard OpenID Connect Provider (OP) for login and enrollment. ]]></description>
     <licence>agpl</licence>
     <author mail="support@gluu.org" homepage="https://gluu.org">Gluu Inc.</author>
     <author mail="support@gluu.org" homepage="https://support.gluu.org">Support</author>
     <author mail="mike@gluu.org" homepage="https://github.com/orgs/GluuFederation/people/nynymike">Director: Mike Schwartz</author>
     <author mail="mr.karapetyan88@gmail.com" homepage="https://github.com/karapetyan88">Developer: Volodya Karapetyan</author>
     <documentation>
-        <user>https://github.com/GluuFederation/nextcloud-oxd-plugin</user>
-        <admin>https://github.com/GluuFederation/nextcloud-oxd-plugin</admin>
-        <developer>https://github.com/GluuFederation/nextcloud-oxd-plugin</developer>
+        <user>https://gluu.org/docs/oxd/plugin/nextcloud/</user>
+        <admin>https://github.com/GluuFederation/nextcloud-oxd-plugin#readme</admin>
+        <developer>https://github.com/GluuFederation/</developer>
     </documentation>
     <website>https://oxd.gluu.org</website>
     <repository type="git">https://github.com/GluuFederation/nextcloud-oxd-plugin.git</repository>
@@ -26,7 +26,7 @@
     <screenshot>https://raw.githubusercontent.com/GluuFederation/nextcloud-oxd-plugin/master/docu/4.png</screenshot>
     <screenshot>https://raw.githubusercontent.com/GluuFederation/nextcloud-oxd-plugin/master/docu/5.png</screenshot>
     <screenshot>https://raw.githubusercontent.com/GluuFederation/nextcloud-oxd-plugin/master/docu/6.png</screenshot>
-    <version>3.0.0</version>
+    <version>3.0.1</version>
     <namespace>GluuSso</namespace>
     <category>auth</category>
     <category>organization</category>

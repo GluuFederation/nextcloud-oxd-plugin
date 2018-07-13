@@ -26,13 +26,13 @@
     <screenshot>https://raw.githubusercontent.com/GluuFederation/nextcloud-oxd-plugin/master/docu/4.png</screenshot>
     <screenshot>https://raw.githubusercontent.com/GluuFederation/nextcloud-oxd-plugin/master/docu/5.png</screenshot>
     <screenshot>https://raw.githubusercontent.com/GluuFederation/nextcloud-oxd-plugin/master/docu/6.png</screenshot>
-    <version>3.0.1</version>
+    <version>3.1.1</version>
     <namespace>GluuSso</namespace>
     <category>auth</category>
     <category>organization</category>
     <category>social</category>
     <category>tools</category>
     <dependencies>
-        <nextcloud min-version="11" max-version="11"/>
+        <nextcloud min-version="13" max-version="13"/>
     </dependencies>
 </info>

@@ -1,3 +1,7 @@
+# DEPRECATED
+
+Please note that this plugin is no longer maintained and nextcloud built-in SAML should be used instead until a native OpenID Connect plugin exists for Nextcloud.
+
 [TOC]
 
 # OpenID Connect Single Sign-On (SSO) NextCloud APP by Gluu
